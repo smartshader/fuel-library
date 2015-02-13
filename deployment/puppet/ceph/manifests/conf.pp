@@ -23,7 +23,7 @@ class ceph::conf {
     ceph_conf {
       'global/auth_supported':                     value => $::ceph::auth_supported;
       'global/osd_journal_size':                   value => $::ceph::osd_journal_size;
-      'global/osd_mkfs_type':                      value => $::ceph::osd_mkfs_type;
+      'global/osd_mkfs_type':                      value => 'btrfs';
       'global/osd_pool_default_size':              value => $::ceph::osd_pool_default_size;
       'global/osd_pool_default_min_size':          value => $::ceph::osd_pool_default_min_size;
       'global/osd_pool_default_pg_num':            value => $::ceph::osd_pool_default_pg_num;
